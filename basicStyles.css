@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap");
+:root {
+	--gradient-golden: linear-gradient(175deg, #e1cd87, #ca9d4b);
+	/* --gradient-dark-2: linear-gradient(175deg, #333333, #000000); */
+	--gradient-dark: linear-gradient(150deg, #111111, #000000);
+	--gradient-black: linear-gradient(150deg, #222222, #000000);
+	/* --gradient-black-2: linear-gradient(175deg, #444444, #222222); */
+	--gold: #666666;
+	--text-gold: #fdbc53;
+	--light: #fefefe;
+	--semi-dark: #999999;
+	--black: #111111;
+	--primary-color: #1e41b480;
+	--overlay-color: #1e9eb4d0;
+	--ham-speed: 0.75s;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: var(--black);
+	border-left: 1px solid var(--gold);
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--gradient-golden);
+	border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--gold);
+}
+
+*,
+*:before,
+*:after {
+	-webkit-tap-highlight-color: transparent;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+html,
+body {
+	min-height: 100%;
+	width: 100%;
+	line-height: 1.5;
+	font-family: "Comfortaa", cursive;
+	color: var(--text);
+	color: rgb(255, 187, 0);
+}
+
+body {
+	height: 100%;
+	line-height: 1.4;
+	background: var(--gradient-black) no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: 150% 150%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dp-flex {
+	display: flex;
+}
+
+.justify-center {
+	justify-content: center;
+}
+
+.align-center {
+	align-items: center;
+}
+
+.basic-transition {
+	transition: 0.4s ease;
+}
+
+.self-center {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
